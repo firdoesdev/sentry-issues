@@ -11,7 +11,7 @@ export const TopNavigation = () => {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-black/80 backdrop-blur-md">
+    <header className="top-0 left-0 right-0 z-50 border-b border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-black/80 backdrop-blur-md">
       <div className="flex items-center justify-between h-16 px-6 sm:px-12 lg:px-24 mx-auto max-w-7xl">
         {/* Logo and Desktop Nav */}
         <div className="flex items-center gap-8 shadow-none bg-transparent">
@@ -40,13 +40,22 @@ export const TopNavigation = () => {
 
           {/* Desktop Links */}
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-zinc-600 dark:text-zinc-400 mt-1">
-            <Link href="#features" className="hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors">
+            <Link
+              href="#features"
+              className="hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors"
+            >
               Features
             </Link>
-            <Link href="#pricing" className="hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors">
+            <Link
+              href="#pricing"
+              className="hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors"
+            >
               Pricing
             </Link>
-            <Link href="#about" className="hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors">
+            <Link
+              href="#about"
+              className="hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors"
+            >
               About
             </Link>
           </nav>
