@@ -39,7 +39,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
             Issues
           </div>
           <div className="px-3 py-2 text-sm font-medium text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors cursor-pointer rounded-md hover:bg-zinc-50 dark:hover:bg-zinc-900/50">
-            Settings
+            <Link href="/settings">Settings</Link>
           </div>
         </nav>
       </aside>
