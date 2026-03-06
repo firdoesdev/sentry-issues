@@ -58,6 +58,19 @@ export default async function SettingsPage() {
             </div>
 
             <div className="space-y-2">
+              <Label htmlFor="sentryOrganizationId">Sentry Organization ID</Label>
+              <Input 
+                id="sentryOrganizationId"
+                name="sentryOrganizationId"
+                placeholder="acme-corp" 
+                defaultValue={userRecord?.sentryOrganizationId || ""}
+              />
+              <p className="text-xs text-zinc-500">
+                Your unique organization slug in Sentry.
+              </p>
+            </div>
+
+            <div className="space-y-2">
               <Label htmlFor="sentryAuthToken">Sentry Auth Token</Label>
               <Input 
                 id="sentryAuthToken"

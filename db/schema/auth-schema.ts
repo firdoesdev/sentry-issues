@@ -8,6 +8,7 @@ export const user = pgTable("user", {
   emailVerified: boolean("email_verified").default(false).notNull(),
   image: text("image"),
   sentryBaseUrl: text("sentry_base_url"),
+  sentryOrganizationId: text("sentry_organization_id"),
   sentryAuthToken: text("sentry_auth_token"),
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at")

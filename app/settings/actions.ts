@@ -17,6 +17,7 @@ export async function updateSentrySettings(formData: FormData) {
   }
 
   const sentryBaseUrl = formData.get("sentryBaseUrl") as string;
+  const sentryOrganizationId = formData.get("sentryOrganizationId") as string;
   const sentryAuthToken = formData.get("sentryAuthToken") as string;
 
   try {
@@ -24,6 +25,7 @@ export async function updateSentrySettings(formData: FormData) {
       .update(user)
       .set({
         sentryBaseUrl: sentryBaseUrl || null,
+        sentryOrganizationId: sentryOrganizationId || null,
         sentryAuthToken: sentryAuthToken || null,
       })
       .where(eq(user.id, session.user.id));
